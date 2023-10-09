@@ -1,0 +1,593 @@
+object Form2: TForm2
+  Left = 653
+  Height = 429
+  Top = 285
+  Width = 706
+  Caption = 'Form2'
+  ClientHeight = 429
+  ClientWidth = 706
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 90
+    Height = 21
+    Top = 49
+    Width = 78
+    Caption = 'Slice group'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 129
+    Height = 21
+    Top = 73
+    Width = 39
+    Caption = 'Slices'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 97
+    Height = 21
+    Top = 98
+    Width = 71
+    Caption = 'Dist factor'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 113
+    Height = 21
+    Top = 122
+    Width = 55
+    Caption = 'Position'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label4Click
+  end
+  object Label5: TLabel
+    Left = 89
+    Height = 21
+    Top = 146
+    Width = 79
+    Caption = 'Orientation'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label4Click
+  end
+  object Label6: TLabel
+    Left = 74
+    Height = 21
+    Top = 170
+    Width = 94
+    Caption = 'Phase inc. dir.'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label4Click
+  end
+  object Label7: TLabel
+    Left = 32
+    Height = 21
+    Top = 218
+    Width = 136
+    Caption = 'Phase oversamping'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label4Click
+  end
+  object ListBox1: TListBox
+    Left = 192
+    Height = 21
+    Top = 48
+    Width = 64
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Items.Strings = (
+      '1'
+      '2'
+      '3'
+      '4'
+      '5'
+      '6'
+      '7'
+    )
+    ItemHeight = 17
+    ParentFont = False
+    TabOrder = 0
+  end
+  object ListBox2: TListBox
+    Left = 192
+    Height = 24
+    Top = 72
+    Width = 110
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Items.Strings = (
+      '1'
+      '2'
+      '3'
+      '4'
+      '5'
+      '6'
+      '7'
+      '8'
+    )
+    ItemHeight = 17
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 256
+    Height = 22
+    Top = 48
+    Width = 24
+    Caption = '+'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 278
+    Height = 22
+    Top = 48
+    Width = 24
+    Caption = '-'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object ListBox4: TListBox
+    Left = 192
+    Height = 21
+    Top = 121
+    Width = 110
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 4
+  end
+  object ListBox5: TListBox
+    Left = 192
+    Height = 21
+    Top = 146
+    Width = 110
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 5
+  end
+  object ListBox6: TListBox
+    Left = 192
+    Height = 21
+    Top = 170
+    Width = 110
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 6
+  end
+  object ListBox7: TListBox
+    Left = 192
+    Height = 21
+    Top = 218
+    Width = 110
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 7
+  end
+  object Label8: TLabel
+    Left = 309
+    Height = 21
+    Top = 98
+    Width = 13
+    Caption = '%'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 309
+    Height = 21
+    Top = 218
+    Width = 13
+    Caption = '%'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button3: TButton
+    Left = 304
+    Height = 21
+    Top = 122
+    Width = 19
+    Caption = '...'
+    TabOrder = 8
+  end
+  object Button4: TButton
+    Left = 304
+    Height = 21
+    Top = 146
+    Width = 19
+    Caption = '...'
+    TabOrder = 9
+  end
+  object Button5: TButton
+    Left = 304
+    Height = 21
+    Top = 170
+    Width = 19
+    Caption = '...'
+    TabOrder = 10
+  end
+  object Label10: TLabel
+    Left = 456
+    Height = 21
+    Top = 48
+    Width = 62
+    Caption = 'FoV read'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ListBox8: TListBox
+    Left = 528
+    Height = 21
+    Top = 49
+    Width = 88
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 11
+  end
+  object Label11: TLabel
+    Left = 448
+    Height = 21
+    Top = 73
+    Width = 72
+    Caption = 'FoV phase'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ListBox9: TListBox
+    Left = 528
+    Height = 21
+    Top = 73
+    Width = 88
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 12
+  end
+  object ListBox10: TListBox
+    Left = 528
+    Height = 21
+    Top = 97
+    Width = 88
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 13
+  end
+  object Label12: TLabel
+    Left = 418
+    Height = 21
+    Top = 97
+    Width = 100
+    Caption = 'Slice thickness'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ListBox11: TListBox
+    Left = 528
+    Height = 21
+    Top = 121
+    Width = 88
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 14
+  end
+  object Label13: TLabel
+    Left = 500
+    Height = 21
+    Top = 121
+    Width = 18
+    Caption = 'TR'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ListBox12: TListBox
+    Left = 528
+    Height = 21
+    Top = 145
+    Width = 88
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 15
+  end
+  object Label14: TLabel
+    Left = 500
+    Height = 21
+    Top = 145
+    Width = 16
+    Caption = 'TE'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ListBox13: TListBox
+    Left = 528
+    Height = 21
+    Top = 168
+    Width = 88
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 16
+  end
+  object Label15: TLabel
+    Left = 454
+    Height = 21
+    Top = 169
+    Width = 64
+    Caption = 'Averages'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ListBox14: TListBox
+    Left = 528
+    Height = 21
+    Top = 217
+    Width = 88
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 17
+  end
+  object Label16: TLabel
+    Left = 411
+    Height = 21
+    Top = 217
+    Width = 107
+    Caption = 'Concatenations'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ListBox15: TListBox
+    Left = 528
+    Height = 21
+    Top = 245
+    Width = 88
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 18
+  end
+  object Label17: TLabel
+    Left = 481
+    Height = 21
+    Top = 245
+    Width = 35
+    Caption = 'Filter'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ListBox16: TListBox
+    Left = 528
+    Height = 21
+    Top = 277
+    Width = 88
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 19
+  end
+  object Label18: TLabel
+    Left = 424
+    Height = 21
+    Top = 277
+    Width = 94
+    Caption = 'Coil elements'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label19: TLabel
+    Left = 624
+    Height = 21
+    Top = 48
+    Width = 28
+    Caption = 'mm'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label20: TLabel
+    Left = 624
+    Height = 21
+    Top = 73
+    Width = 17
+    Caption = ' %'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label21: TLabel
+    Left = 624
+    Height = 21
+    Top = 97
+    Width = 28
+    Caption = 'mm'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label22: TLabel
+    Left = 624
+    Height = 21
+    Top = 121
+    Width = 21
+    Caption = 'ms'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label23: TLabel
+    Left = 624
+    Height = 21
+    Top = 145
+    Width = 21
+    Caption = 'ms'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button6: TButton
+    Left = 432
+    Height = 32
+    Top = 328
+    Width = 80
+    Caption = 'Save'
+    TabOrder = 20
+  end
+  object Button7: TButton
+    Left = 536
+    Height = 32
+    Top = 328
+    Width = 80
+    Caption = 'Close'
+    OnClick = Button7Click
+    TabOrder = 21
+  end
+  object Select: TEdit
+    Left = 192
+    Height = 23
+    Top = 97
+    Width = 110
+    TabOrder = 22
+  end
+end

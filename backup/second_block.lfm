@@ -1,0 +1,84 @@
+object Form2: TForm2
+  Left = 523
+  Height = 291
+  Top = 409
+  Width = 600
+  Caption = 'Help'
+  ClientHeight = 291
+  ClientWidth = 600
+  LCLVersion = '2.2.6.0'
+  object Button1: TButton
+    Left = 488
+    Height = 29
+    Top = 240
+    Width = 84
+    Caption = 'Back'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 36
+    Height = 21
+    Top = 32
+    Width = 286
+    Caption = 'Press CANCEL to final program execution'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 36
+    Height = 21
+    Top = 56
+    Width = 381
+    Caption = 'Press DETAILS to know more information about patient'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 36
+    Height = 21
+    Top = 80
+    Width = 200
+    Caption = 'Press SEARCH to find patient'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 36
+    Height = 21
+    Top = 128
+    Width = 499
+    Caption = 'Press PREREGISTER when information about patient and study is correct'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 36
+    Height = 21
+    Top = 104
+    Width = 472
+    Caption = 'Press Exam to know if information about patient and study is correct'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+end

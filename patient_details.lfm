@@ -1,0 +1,19 @@
+object Form3: TForm3
+  Left = 537
+  Height = 398
+  Top = 345
+  Width = 552
+  Caption = 'Patient details'
+  ClientHeight = 398
+  ClientWidth = 552
+  LCLVersion = '2.2.6.0'
+  object Button1: TButton
+    Left = 232
+    Height = 25
+    Top = 344
+    Width = 75
+    Caption = 'Close'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+end

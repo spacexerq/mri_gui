@@ -1,0 +1,482 @@
+object Form1: TForm1
+  Left = 542
+  Height = 557
+  Top = 231
+  Width = 716
+  Anchors = [akTop, akRight]
+  Caption = 'Gui1'
+  ClientHeight = 557
+  ClientWidth = 716
+  LCLVersion = '2.2.6.0'
+  object patient_lastname: TEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Label11
+    AnchorSideTop.Side = asrBottom
+    Left = 262
+    Height = 23
+    Top = 65
+    Width = 192
+    BorderSpacing.Top = 15
+    OnChange = patient_lastnameChange
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Label11
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = patient_lastname
+    Left = 176
+    Height = 21
+    Top = 65
+    Width = 71
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 15
+    BorderSpacing.Right = 15
+    Caption = 'Last name'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object patient_first_name: TEdit
+    AnchorSideLeft.Control = patient_lastname
+    AnchorSideTop.Control = patient_lastname
+    AnchorSideTop.Side = asrBottom
+    Left = 262
+    Height = 23
+    Top = 103
+    Width = 192
+    BorderSpacing.Top = 15
+    OnChange = patient_lastnameChange
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = patient_lastname
+    Left = 174
+    Height = 21
+    Top = 101
+    Width = 73
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 15
+    BorderSpacing.Right = 15
+    Caption = 'First name'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object Label3: TLabel
+    AnchorSideTop.Control = patient_first_name
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = patient_first_name
+    Left = 218
+    Height = 21
+    Top = 141
+    Width = 29
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 15
+    BorderSpacing.Right = 15
+    Caption = 'Title'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object Title: TEdit
+    AnchorSideLeft.Control = patient_first_name
+    AnchorSideTop.Control = patient_first_name
+    AnchorSideTop.Side = asrBottom
+    Left = 262
+    Height = 23
+    Top = 141
+    Width = 136
+    BorderSpacing.Top = 15
+    OnChange = patient_lastnameChange
+    TabOrder = 2
+  end
+  object Label4: TLabel
+    AnchorSideTop.Control = Title
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Title
+    Left = 181
+    Height = 21
+    Top = 179
+    Width = 66
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 15
+    BorderSpacing.Right = 15
+    Caption = 'Patient ID'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object Patient_ID: TEdit
+    AnchorSideLeft.Control = Title
+    AnchorSideTop.Control = Title
+    AnchorSideTop.Side = asrBottom
+    Left = 262
+    Height = 23
+    Top = 179
+    Width = 192
+    BorderSpacing.Top = 15
+    OnChange = patient_lastnameChange
+    TabOrder = 3
+  end
+  object Label5: TLabel
+    AnchorSideTop.Control = Patient_ID
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Date_of_birth
+    Left = 160
+    Height = 21
+    Top = 217
+    Width = 87
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 15
+    BorderSpacing.Right = 15
+    Caption = 'Date of birth'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object Date_of_birth: TEdit
+    AnchorSideLeft.Control = Patient_ID
+    AnchorSideTop.Control = Patient_ID
+    AnchorSideTop.Side = asrBottom
+    Left = 262
+    Height = 23
+    Top = 217
+    Width = 112
+    BorderSpacing.Top = 15
+    OnChange = patient_lastnameChange
+    TabOrder = 4
+  end
+  object Label6: TLabel
+    AnchorSideLeft.Control = Label5
+    AnchorSideTop.Control = Date_of_birth
+    AnchorSideTop.Side = asrBottom
+    Left = 160
+    Height = 21
+    Top = 255
+    Width = 24
+    BorderSpacing.Top = 15
+    Caption = 'Sex'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object RadioButton1: TRadioButton
+    AnchorSideLeft.Control = Label6
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Date_of_birth
+    AnchorSideTop.Side = asrBottom
+    Left = 199
+    Height = 25
+    Top = 255
+    Width = 54
+    BorderSpacing.Left = 15
+    BorderSpacing.Top = 15
+    Caption = 'Male'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 5
+  end
+  object RadioButton2: TRadioButton
+    AnchorSideLeft.Control = Patient_ID
+    AnchorSideTop.Control = Date_of_birth
+    AnchorSideTop.Side = asrBottom
+    Left = 267
+    Height = 25
+    Top = 255
+    Width = 70
+    BorderSpacing.Left = 5
+    BorderSpacing.Top = 15
+    Caption = 'Female'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Label7: TLabel
+    AnchorSideTop.Control = RadioButton2
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = patient_lastname5
+    Left = 220
+    Height = 21
+    Top = 295
+    Width = 27
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 15
+    BorderSpacing.Right = 15
+    Caption = 'Age'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object patient_lastname5: TEdit
+    AnchorSideLeft.Control = Date_of_birth
+    AnchorSideTop.Control = RadioButton2
+    AnchorSideTop.Side = asrBottom
+    Left = 262
+    Height = 23
+    Top = 295
+    Width = 112
+    BorderSpacing.Top = 15
+    OnChange = patient_lastnameChange
+    TabOrder = 7
+  end
+  object Label8: TLabel
+    AnchorSideTop.Control = Label7
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Label7
+    AnchorSideRight.Side = asrBottom
+    Left = 206
+    Height = 21
+    Top = 331
+    Width = 41
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 15
+    Caption = 'Heigh'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object patient_lastname6: TEdit
+    AnchorSideLeft.Control = Label7
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Label7
+    AnchorSideTop.Side = asrBottom
+    Left = 262
+    Height = 23
+    Top = 331
+    Width = 112
+    BorderSpacing.Top = 15
+    OnChange = patient_lastnameChange
+    TabOrder = 8
+  end
+  object weight_: TLabel
+    AnchorSideTop.Control = patient_lastname6
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = weight
+    Left = 198
+    Height = 21
+    Top = 364
+    Width = 49
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 10
+    BorderSpacing.Right = 15
+    Caption = 'Weight'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object weight: TEdit
+    AnchorSideLeft.Control = patient_lastname5
+    AnchorSideTop.Control = Label8
+    AnchorSideTop.Side = asrBottom
+    Left = 262
+    Height = 23
+    Top = 367
+    Width = 112
+    BorderSpacing.Top = 15
+    OnChange = patient_lastnameChange
+    TabOrder = 9
+  end
+  object additional_info_: TLabel
+    AnchorSideTop.Control = weight_
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = weight
+    Left = 145
+    Height = 21
+    Top = 400
+    Width = 102
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 15
+    BorderSpacing.Right = 15
+    Caption = 'Additional info'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object additional_info: TEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = weight
+    AnchorSideTop.Side = asrBottom
+    Left = 262
+    Height = 23
+    Top = 400
+    Width = 192
+    BorderSpacing.Top = 10
+    OnChange = patient_lastnameChange
+    TabOrder = 10
+  end
+  object Label11: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Owner
+    Left = 326
+    Height = 30
+    Top = 20
+    Width = 64
+    BorderSpacing.Left = 200
+    BorderSpacing.Top = 20
+    Caption = 'Patient'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    AnchorSideLeft.Control = additional_info
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = weight
+    AnchorSideTop.Side = asrBottom
+    Left = 474
+    Height = 32
+    Top = 391
+    Width = 120
+    BorderSpacing.Left = 20
+    BorderSpacing.Top = 1
+    Caption = 'Details'
+    OnChangeBounds = Button1ChangeBounds
+    OnClick = Button1Click
+    TabOrder = 11
+  end
+  object Preregister: TButton
+    AnchorSideTop.Control = additional_info_
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Exam
+    Left = 69
+    Height = 36
+    Top = 443
+    Width = 110
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 22
+    BorderSpacing.Right = 10
+    Caption = 'Preregister'
+    TabOrder = 12
+  end
+  object Exam: TButton
+    AnchorSideTop.Control = additional_info
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Search
+    Left = 189
+    Height = 36
+    Top = 443
+    Width = 106
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 20
+    BorderSpacing.Right = 10
+    Caption = 'Exam'
+    TabOrder = 13
+  end
+  object Search: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = additional_info
+    AnchorSideTop.Side = asrBottom
+    Left = 305
+    Height = 36
+    Top = 443
+    Width = 107
+    BorderSpacing.Top = 20
+    Caption = 'Search'
+    TabOrder = 14
+  end
+  object Cancel: TButton
+    AnchorSideLeft.Control = Search
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = additional_info
+    AnchorSideTop.Side = asrBottom
+    Left = 422
+    Height = 36
+    Top = 443
+    Width = 107
+    BorderSpacing.Left = 10
+    BorderSpacing.Top = 20
+    Caption = 'Cancel'
+    OnClick = CancelClick
+    TabOrder = 15
+  end
+  object Help: TButton
+    AnchorSideLeft.Control = Cancel
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Cancel
+    Left = 539
+    Height = 36
+    Top = 443
+    Width = 107
+    BorderSpacing.Left = 10
+    Caption = 'Help'
+    OnClick = HelpClick
+    TabOrder = 16
+  end
+  object RadioButton3: TRadioButton
+    AnchorSideTop.Control = Date_of_birth
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Patient_ID
+    AnchorSideRight.Side = asrBottom
+    Left = 351
+    Height = 25
+    Top = 255
+    Width = 83
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 15
+    BorderSpacing.Right = 20
+    Caption = 'Phantom'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 17
+  end
+end
