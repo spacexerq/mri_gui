@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
-  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1411537227"/>
-  <Params Value=" -MObjFPC -Scghi -O1 -gw3 -gl -WG -l -vewnhibq -FiC:\Users\droid\Projects\lazarus_projects\lazarus_projects\GUI2\lib\x86_64-win64 -FuC:\lazarus\lcl\units\x86_64-win64\win32 -FuC:\lazarus\lcl\units\x86_64-win64 -FuC:\lazarus\components\freetype\lib\x86_64-win64 -FuC:\lazarus\components\lazutils\lib\x86_64-win64 -FuC:\lazarus\packager\units\x86_64-win64 -FuC:\Users\droid\Projects\lazarus_projects\lazarus_projects\GUI2\ -FUC:\Users\droid\Projects\lazarus_projects\lazarus_projects\GUI2\lib\x86_64-win64\ -FEC:\Users\droid\Projects\lazarus_projects\lazarus_projects\GUI2\ -oC:\Users\droid\Projects\lazarus_projects\lazarus_projects\GUI2\gui2.exe -dLCL -dLCLwin32 gui2.lpr"/>
+  <Compiler Value="D:\Apps\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1449427374"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw3 -gl -WG -l -vewnhibq -FiC:\Users\ПК\mri_gui\GUI2\lib\x86_64-win64 -FuD:\Apps\lazarus\lcl\units\x86_64-win64\win32 -FuD:\Apps\lazarus\lcl\units\x86_64-win64 -FuD:\Apps\lazarus\components\freetype\lib\x86_64-win64 -FuD:\Apps\lazarus\components\lazutils\lib\x86_64-win64 -FuD:\Apps\lazarus\packager\units\x86_64-win64 -FuC:\Users\ПК\mri_gui\GUI2\ -FUC:\Users\ПК\mri_gui\GUI2\lib\x86_64-win64\ -FEC:\Users\ПК\mri_gui\GUI2\ -oC:\Users\ПК\mri_gui\GUI2\gui2.exe -dLCL -dLCLwin32 gui2.lpr"/>
 </CONFIG>
